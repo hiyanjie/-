@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML homework</title>
+        <style>
+            .introduce {
+                width: 20px;
+                height: 50px;
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>新北市三重人，畢業於中原大學，正在中正念通訊碩的路上。個性隨和應該算好相處，
+            平時喜歡看電影，聽音樂偶爾運動。在大學沒有修過跟HTML或前端有關的課，
+            第一次寫HTML覺得很陌生。</p>
+        
+            <nav>
+                <ul>
+                    <li>
+                        <a href="main.html" target="_self">回首頁</a>
+                    </li>
+                </ul>
+            </nav>
+    </body>
+</html>
