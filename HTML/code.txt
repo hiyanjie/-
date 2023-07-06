@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML homework</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pic {
+            margin: auto;
+        }
+
+        .begin {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 200px;
+        }
+
+        .section {
+            border-top: 2px solid black;
+            margin-top: 20px;
+            padding-top: 20px;
+            overflow: auto;
+            display: flex; /* 使用 flexbox 布局 */
+            justify-content: center; /* 水平居中对齐 */
+            align-items: center; /* 垂直居中对齐 */
+            text-align: center; /* 文字水平居中对齐 */
+        }
+
+        .image-left {
+            float: right; /* 图片在左侧浮动 */
+            width: 30%; /* 图片占据 30% 的宽度 */
+            padding-left: 20px; /* 图片右侧留出空白间距 */
+        }
+
+        .image-right {
+            float: left; /* 图片在左侧浮动 */
+            width: 30%; /* 图片占据 30% 的宽度 */
+            padding-right: 20px; /* 图片右侧留出空白间距 */
+        }
+
+        .text{
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            padding-right: 500px;
+        }
+
+        
+
+        .image-left img {
+            max-width: 80%; /* 图片最大宽度为60% */
+            height: auto; /* 高度自动调整保持比例 */
+        }
+
+        .image-right img {
+            max-width: 100%; /* 图片最大宽度为60% */
+            height: auto; /* 高度自动调整保持比例 */
+        }
+
+    
+
+        .section:first-child .image img {
+            max-width: 100%;
+            max-height: 200px; /* 設定圖片的最大高度 */
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .button {
+            margin-right: 10px;
+        }
+
+        @media (max-width:768px) {
+            .title{
+                color:blue
+            }
+        }
+            
+        
+            
+        
+
+    </style>
+</head>
+
+<body>
+     
+     <div class="image">
+        <img src="img/pic/school.jpg" width="1000" height="1000">
+    </div>
+
+    <nav> 
+        <div class="button"><a href="#section1" target="_self">回最上頁</a></div>
+        <div class="button"><a href="#section2" target="_self">自我介紹</a></div>
+        <div class="button"><a href="#section3" target="_self">水果大餐</a></div>
+        <div class="button"><a href="#section4" target="_self">我家的狗</a></div>
+        <div class="button"><a href="#section5" target="_self">海上落難</a></div>
+    </nav>
+    <img src="img/pic/logo.jpg">
+    
+    
+
+    <div class="section"  id="section2">
+        <div class="image-left">
+            <img src="img/pic/s1.jpg">
+        </div>
+        <div class="text">
+            <p>新北市三重人，畢業於中原大學，正在中正念通訊碩的路上。個性隨和應該算好相處，
+            平時喜歡看電影，聽音樂偶爾運動。在大學沒有修過跟HTML或前端有關的課，
+            第一次寫HTML覺得很陌生。</p>
+        </div>
+    </div>
+
+    <div class="section"  id="section3">
+        <div class="image-right">
+            <img src="img/pic/fruit.jpg">
+        </div>
+        <div class="text">
+            <p>這張水果照是我跟同學去泰國畢業旅行的時候吃的，裡面有在台灣買很貴很貴的山竹，吃起來還不錯。
+                還有台灣沒有的紅毛丹，我覺得吃起來就像比較不甜的荔枝。泰國的芒果跟我們的也不一樣，台灣的芒果吃起來比較甜。
+                鳳梨我覺得還好，我還有吃榴槤，還不錯但好臭。
+            </p>
+        </div>
+
+    </div>
+
+    <div class="section"  id="section4">
+        <div class="image-left">
+            <img src="img/pic/dog.jpg">
+        </div>
+        <div class="text">
+            <p>這是我家的狗，牠原本是一隻流落街頭的流浪狗，但很幸運地被我撿回家了。牠很可愛很黏人，但每次有人開門時都會亂叫。
+                常常跟我一起出去散步，牠會坐下跟握手，但牠不會後空翻。每次回家都會熱烈的歡迎我。
+            </p>
+        </div>
+    </div>
+
+    <div class="section"  id="section5">
+        <div class="image-right">
+            <img src="img/pic/jump.jpg">
+        </div>
+        <div class="text">
+            <p>我暑假的時候去玩飛傘，高度大概20~30公尺，玩一次要1000泰銖，他會先飛很高再下降讓你的腳去點水，接著升起再將繩子收回來。
+                體驗一次大概5~8分鐘，但輪到我的時候因為機器故障我總共點了5次水，在空中待了快30分鐘。最後被直接丟在水裡把我拽回來。
+                都給同樣的錢，我沒有帥帥的落地照，只有像偷渡客的落水照。不過我玩了30分鐘。
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
