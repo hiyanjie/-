@@ -7,28 +7,25 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: skyblue
         }
 
-        .pic {
-            margin: auto;
-        }
-
-        .begin {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            height: 200px;
-        }
 
         .section {
             border-top: 2px solid black;
             margin-top: 20px;
             padding-top: 20px;
             overflow: auto;
-            display: flex; /* 使用 flexbox 布局 */
-            justify-content: center; /* 水平居中对齐 */
-            align-items: center; /* 垂直居中对齐 */
-            text-align: center; /* 文字水平居中对齐 */
+            position: relative;
+            flex-direction: column;
+            
+        }
+
+        .content-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         .image-left {
@@ -44,6 +41,7 @@
         }
 
         .text{
+            font-size: 32px;
             overflow: hidden;
             margin: 0;
             padding: 0;
@@ -54,22 +52,16 @@
         
 
         .image-left img {
-            max-width: 80%; /* 图片最大宽度为60% */
-            height: auto; /* 高度自动调整保持比例 */
+            max-width: 100%; 
+            height: auto; 
         }
 
         .image-right img {
-            max-width: 100%; /* 图片最大宽度为60% */
-            height: auto; /* 高度自动调整保持比例 */
+            max-width: 100%; 
+            height: auto; 
         }
 
     
-
-        .section:first-child .image img {
-            max-width: 100%;
-            max-height: 200px; /* 設定圖片的最大高度 */
-            height: auto;
-        }
 
         nav {
             display: flex;
@@ -80,11 +72,26 @@
             margin-right: 10px;
         }
 
-        @media (max-width:768px) {
-            .title{
-                color:blue
-            }
+        .ccu-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 300px;
+            height: auto;
+            transform: scale(0.5);
         }
+
+        .ccu-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        @media (max-width: 768px) {
+          .title {
+            color: red;
+         }
+}
             
         
             
@@ -95,8 +102,11 @@
 
 <body>
      
+    <div class="ccu-container">
+        <img src="img/pic/ccu.png">
+    </div>
      <div class="image">
-        <img src="img/pic/school.jpg" width="1000" height="1000">
+        <img src="img/pic/school.jpg" width="600" height="400">
     </div>
 
     <nav> 
@@ -106,7 +116,6 @@
         <div class="button"><a href="#section4" target="_self">我家的狗</a></div>
         <div class="button"><a href="#section5" target="_self">海上落難</a></div>
     </nav>
-    <img src="img/pic/logo.jpg">
     
     
 
@@ -115,6 +124,7 @@
             <img src="img/pic/s1.jpg">
         </div>
         <div class="text">
+            <p class="title">盧彥傑</p>
             <p>新北市三重人，畢業於中原大學，正在中正念通訊碩的路上。個性隨和應該算好相處，
             平時喜歡看電影，聽音樂偶爾運動。在大學沒有修過跟HTML或前端有關的課，
             第一次寫HTML覺得很陌生。</p>
@@ -140,7 +150,7 @@
         </div>
         <div class="text">
             <p>這是我家的狗，牠原本是一隻流落街頭的流浪狗，但很幸運地被我撿回家了。牠很可愛很黏人，但每次有人開門時都會亂叫。
-                常常跟我一起出去散步，牠會坐下跟握手，但牠不會後空翻。每次回家都會熱烈的歡迎我。
+                常常跟我一起出去散步，牠會坐下跟握手，但牠不會後空翻。每次回家只有牠會熱烈的歡迎我。
             </p>
         </div>
     </div>
